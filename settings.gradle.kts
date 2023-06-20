@@ -24,8 +24,8 @@ dependencyResolutionManagement {
             // https://github.com/square/okhttp/blob/master/CHANGELOG.md
             version("okhttp", "4.10.0")
 
-            version("ohttp-encapsulator-android", "0.0.4")
-            version("bhttp", "0.0.1")
+            version("ohttp-encapsulator-android", "main-SNAPSHOT")
+            version("bhttp", "main-SNAPSHOT")
 
             library("androidGradlePlugin", "com.android.tools.build", "gradle").versionRef("androidGradlePlugin")
             library("androidJunit5", "de.mannodermaus.gradle.plugins", "android-junit5").versionRef("androidJunit5")
@@ -35,9 +35,9 @@ dependencyResolutionManagement {
             library("network_okhttp", "com.squareup.okhttp3", "okhttp").versionRef("okhttp")
             library("network_okhttp_mockWebServer", "com.squareup.okhttp3", "mockwebserver").versionRef("okhttp")
 
-            library("network_ohttpEncapsulator", "health.flo.ohttp", "ohttp-encapsulator-android")
+            library("network_ohttpEncapsulator", "com.github.flohealth", "ohttp-encapsulator")
                 .versionRef("ohttp-encapsulator-android")
-            library("network_bhttp", "health.flo.network", "ok-bhttp-android")
+            library("network_bhttp", "com.github.flohealth", "ok-bhttp")
                 .versionRef("bhttp")
 
             library("testing_junit5", "org.junit.jupiter", "junit-jupiter-api").versionRef("junit5")
