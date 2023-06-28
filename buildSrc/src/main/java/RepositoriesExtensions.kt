@@ -1,6 +1,7 @@
 import org.gradle.api.Project
 import org.gradle.api.artifacts.ConfigurationContainer
 import org.gradle.api.artifacts.dsl.RepositoryHandler
+import org.gradle.kotlin.dsl.maven
 import java.util.concurrent.TimeUnit
 
 fun Project.configureRepositories(
@@ -25,4 +26,5 @@ fun RepositoryHandler.addPluginRepositories() {
 fun RepositoryHandler.addRepositories() {
     google()
     mavenCentral()
+    maven(url = "https://jitpack.io")
 }
