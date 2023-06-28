@@ -10,12 +10,18 @@ It is compatible with the OHTTP [relay](https://github.com/cloudflare/privacy-ga
 corresponding [server](https://github.com/cloudflare/privacy-gateway-server-go) implementations from Cloudflare. <br />
 
 ## Download
+
+#### Declare Gradle dependencies
+```kotlin
+dependencies {
+    implementation("com.github.flohealth:ok-ohttp-plugin:0.1.0")
+}
+```
+#### Download artifacts
 You can download the following artifacts: <br />
 - ok-bhttp: [GitHub Releases](https://github.com/flohealth/ok-bhttp/releases) <br />
 - ok-ohttp-encapsulator: [GitHub Releases](https://github.com/flohealth/ok-ohttp-encapsulator/releases) <br />
 - ok-ohttp-plugin: [GitHub Releases](https://github.com/flohealth/ok-ohttp-plugin/releases) <br />
-
-Maven artifacts are coming soon.
 
 ## Usage
 
