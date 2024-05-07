@@ -1,6 +1,8 @@
 val testImplementation by configurations
 val testRuntimeOnly by configurations
 
+val libs = extensions.getByName("libs") as org.gradle.accessors.dm.LibrariesForLibs
+
 dependencies {
     testRuntimeOnly(libs.testing.junit5.engine)
 
