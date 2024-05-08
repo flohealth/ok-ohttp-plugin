@@ -9,7 +9,7 @@ buildscript {
     dependencies {
         classpath(libs.androidGradlePlugin)
         classpath(libs.kotlin.gradlePlugin)
-        classpath(libs.androidJunit5)
+        classpath(libs.testing.androidJunit5)
     }
 }
 

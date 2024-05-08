@@ -1,0 +1,62 @@
+[versions]
+assertj = "3.24.2"
+
+androidGradlePlugin = "8.2.2"
+
+# https://github.com/mannodermaus/android-junit5/releases
+androidJunit5 = "1.10.0.0"
+
+# https://junit.org/junit5/docs/snapshot/release-notes/
+junit5 = "5.10.2"
+
+# https://kotlinlang.org/docs/releases.html#release-details
+kotlin = "1.8.21"
+
+# https://github.com/mockito/mockito/releases
+mockito = "4.11.0"
+# https://github.com/mockito/mockito-kotlin/releases
+mockitoKotlin = "4.1.0"
+
+# https://github.com/square/okhttp/blob/master/CHANGELOG.md
+okhttp = "4.12.0"
+
+ohttp-encapsulator-android = "0.1.0"
+bhttp = "0.1.0"
+
+
+[libraries]
+androidGradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
+kotlin_gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+
+network_okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+network_okhttp_mockWebServer = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "okhttp" }
+
+network_ohttpEncapsulator = { group = "com.github.flohealth", name = "ohttp-encapsulator", version.ref = "ohttp-encapsulator-android" }
+network_bhttp = { group = "com.github.flohealth", name = "ok-bhttp", version.ref = "bhttp" }
+
+testing_junit5 = { group = "org.junit.jupiter", name = "junit-jupiter-api", version.ref = "junit5" }
+testing_junit5_engine = { group = "org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "junit5" }
+testing_junit5_params = { group = "org.junit.jupiter", name = "junit-jupiter-params", version.ref = "junit5" }
+testing_androidJunit5 = { group = "de.mannodermaus.gradle.plugins", name = "android-junit5", version.ref = "androidJunit5" }
+
+testing_mockito_core = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }
+testing_mockito_inline = { group = "org.mockito", name = "mockito-inline", version.ref = "mockito" }
+testing_mockito_kotlin = { group = "org.mockito.kotlin", name = "mockito-kotlin", version.ref = "mockitoKotlin" }
+
+testing_assertj = { group = "org.assertj", name = "assertj-core", version.ref = "assertj" }
+
+
+
+
+[bundles]
+testing_junit5 = [
+    "testing_junit5",
+    "testing_junit5_params",
+]
+testing_mockito = [
+    "testing_mockito_core",
+    "testing_mockito_inline",
+    "testing_mockito_kotlin",
+]
+
+[plugins]
