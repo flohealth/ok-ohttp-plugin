@@ -14,7 +14,7 @@ corresponding [server](https://github.com/cloudflare/privacy-gateway-server-go) 
 #### Declare Gradle dependencies
 ```kotlin
 dependencies {
-    implementation("com.github.flohealth:ok-ohttp-plugin:0.1.0")
+    implementation("com.github.flohealth:ok-ohttp-plugin:0.2.0")
 }
 ```
 #### Download artifacts
